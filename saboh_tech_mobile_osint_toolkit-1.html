@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Saboh Tech — Mobile OSINT Toolkit</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#020607;color:#eaffee;font-family:Arial,sans-serif}
+.wrap{max-width:1100px;margin:auto;padding:25px}
+.hero{padding:35px 20px;text-align:center;border:1px solid #39ff14;border-radius:20px;background:linear-gradient(135deg,#03100a,#030a12);box-shadow:0 0 30px #39ff1433}
+h1{font-size:clamp(32px,7vw,65px);margin:0;color:#39ff14;text-shadow:0 0 15px #39ff14}
+h2{color:#00e5ff;margin-top:35px}
+.badge{display:inline-block;border:1px solid #00e5ff;border-radius:30px;padding:9px 15px;margin:5px;color:#00e5ff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}
+.card{background:#050b0c;border:1px solid #164b25;border-radius:15px;padding:20px;box-shadow:0 0 18px #00ff2215}
+.card h3{color:#39ff14;margin-top:0}
+.card p{color:#b8c8bd;line-height:1.5}
+.tool{border-color:#073e55}
+.tool h3{color:#00e5ff}
+.cmd{background:#000;padding:14px;border-radius:10px;color:#39ff14;font-family:monospace;overflow:auto}
+a{color:#00e5ff}
+.warn{border:1px solid #ffcc00;padding:18px;border-radius:14px;margin-top:25px;color:#ffe477;background:#171303}
+.footer{text-align:center;margin-top:35px;color:#39ff14}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<section class="hero">
+<div class="badge">📱 ANDROID</div>
+<div class="badge">☠️ OSINT TOOLKIT</div>
+<h1>MOBILE OSINT</h1>
+<p>Telefonda OSINT o‘rganish uchun to‘liq boshlang‘ich toolkit</p>
+<p>Saboh Tech Academy • @javokhir0101</p>
+</section>
+
+<h2>🧰 ASOSIY OSINT INSTRUMENTLAR</h2>
+<div class="grid">
+<div class="card tool"><h3>👤 Sherlock</h3><p>Username bo‘yicha ochiq ijtimoiy platformalarni qidirish.</p></div>
+<div class="card tool"><h3>👤 Maigret</h3><p>Username va public account footprint qidiruvi.</p></div>
+<div class="card tool"><h3>🌐 Amass</h3><p>Domain, subdomain va tashqi attack-surface discovery.</p></div>
+<div class="card tool"><h3>🔎 Subfinder</h3><p>Subdomain discovery uchun passiv enumeration.</p></div>
+<div class="card tool"><h3>📡 Nmap</h3><p>Ruxsat berilgan lablarda host va network service discovery.</p></div>
+<div class="card tool"><h3>📧 theHarvester</h3><p>Ochiq manbalardan domain/email bilan bog‘liq ma’lumotlarni yig‘ish.</p></div>
+<div class="card tool"><h3>📧 Holehe</h3><p>Email bilan bog‘liq public account mavjudligini tekshirish.</p></div>
+<div class="card tool"><h3>🖼️ ExifTool</h3><p>Rasmlardagi metadata ma’lumotlarini ko‘rish.</p></div>
+<div class="card tool"><h3>🕸️ SpiderFoot</h3><p>Ko‘plab OSINT manbalarini avtomatlashtirib tahlil qilish.</p></div>
+<div class="card tool"><h3>🌍 WHOIS / RDAP</h3><p>Domain registration va internet resurslari haqidagi public ma’lumotlar.</p></div>
+<div class="card tool"><h3>🗺️ GeoOSINT</h3><p>Google Maps, Google Earth va OpenStreetMap orqali ochiq geografik tahlil.</p></div>
+<div class="card tool"><h3>🖼️ Reverse Image</h3><p>Google Lens, Yandex Images va TinEye orqali rasm qidiruvi.</p></div>
+</div>
+
+<h2>📱 TERMUX — BOSHLANG‘ICH MUHIT</h2>
+<div class="card">
+<p>Androidda OSINT laboratoriya muhitini tayyorlash:</p>
+<div class="cmd">pkg update && pkg upgrade<br>pkg install git python nmap dnsutils whois curl wget</div>
+<p>Keyin kerakli vositalarni alohida o‘rnatib, faqat qonuniy va ruxsat berilgan obyektlarda ishlating.</p>
+</div>
+
+<h2>🔍 OSINT YO‘NALISHLARI</h2>
+<div class="grid">
+<div class="card"><h3>Username OSINT</h3><p>Public username footprint va platformalarni tekshirish.</p></div>
+<div class="card"><h3>Email OSINT</h3><p>Public account va breach notification xizmatlari bilan ishlash.</p></div>
+<div class="card"><h3>Domain OSINT</h3><p>DNS, WHOIS, subdomain va public infrastructure discovery.</p></div>
+<div class="card"><h3>Image OSINT</h3><p>Reverse image search va metadata tahlili.</p></div>
+<div class="card"><h3>GeoOSINT</h3><p>Ochiq xaritalar va rasmlardan joylashuvni tahlil qilish.</p></div>
+<div class="card"><h3>Network OSINT</h3><p>IP, ASN, DNS va ruxsat berilgan lab networklarini o‘rganish.</p></div>
+</div>
+
+<div class="warn">
+⚠️ <b>Qonuniy foydalanish:</b> OSINT vositalaridan faqat ochiq manbalar, o‘zingizga tegishli obyektlar yoki aniq ruxsat berilgan laboratoriyalarda foydalaning. Maxfiy ma’lumotlarni noqonuniy yig‘ish yoki kuzatish mumkin emas.
+</div>
+
+<h2>🚀 O‘RGANISH YO‘LI</h2>
+<div class="grid">
+<div class="card"><h3>01. Search</h3><p>Google operators, username va public-source research.</p></div>
+<div class="card"><h3>02. Network</h3><p>DNS, WHOIS, IP, ASN va Nmap asoslari.</p></div>
+<div class="card"><h3>03. Automation</h3><p>Python va Termux yordamida OSINT workflow.</p></div>
+<div class="card"><h3>04. Practice</h3><p>TryHackMe va Hack The Box kabi ruxsat berilgan lablarda amaliyot.</p></div>
+</div>
+
+<div class="footer">
+SABOH TECH ACADEMY<br>
+📞 +998 77 402 02 90<br>
+✈️ <a href="https://t.me/javokhir0101">@javokhir0101</a>
+</div>
+</div>
+</body>
+</html>
